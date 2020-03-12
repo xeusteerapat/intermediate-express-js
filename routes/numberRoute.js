@@ -44,6 +44,7 @@ router.post('/', (req, res) => {
     default:
       res.send('Incorrect parameter');
   }
+
   console.log(req.body);
 });
 

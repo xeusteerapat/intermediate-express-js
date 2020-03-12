@@ -24,9 +24,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/teerapat', (req, res) => {
-  console.log(req.url);
   res.send(`<h1>My name is Teerapat</h1>`);
 });
+
+app.use('/', numberRoute);
 
 // animals routes
 app.use('/cat', animalRoute);
